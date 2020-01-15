@@ -124,7 +124,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
@@ -187,3 +187,6 @@ WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
 -include vendor/motorola/msm8937-common/BoardConfigCommonVendor.mk
+
+# Properties
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop

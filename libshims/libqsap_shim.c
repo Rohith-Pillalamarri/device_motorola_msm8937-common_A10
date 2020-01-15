@@ -10,6 +10,7 @@
 #include <linux/wireless.h>
 
 #include "log/log.h"
+#include "cutils/log.h"
 
 // Keep in sync with system/qcom/softap/sdk/qsap_api.c
 struct Command qsap_str[eSTR_LAST] = {

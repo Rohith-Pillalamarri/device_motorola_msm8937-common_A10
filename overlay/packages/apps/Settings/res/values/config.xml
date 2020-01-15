@@ -20,4 +20,10 @@
          devices will be able to vary their amplitude but do not possess enough dynamic range to
          have distinct intensity levels -->
     <bool name="config_vibration_supports_multiple_intensities">true</bool>
+
+<!-- If device supports battery health options -->
+    <bool name="config_supportBatteryHealth">true</bool>
+    <string name="config_batChargeCycle">/data/system/batterystats-daily.xml</string>
+    <string name="config_batDesCap">/data/system/batterystats.bin</string>
+    <string name="config_batCurCap">/data/system/batterystats-checkin.bin</string>
 </resources>
