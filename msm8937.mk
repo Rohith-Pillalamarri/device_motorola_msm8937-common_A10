@@ -64,10 +64,17 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/sound_trigger_mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_mixer_paths.xml \
     $(LOCAL_PATH)/audio/sound_trigger_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sound_trigger_platform_info.xml
 
+PRODUCT_PACKAGES += \
+    MiXplorer \
+    Archive \
+    GBoard \
+    MotoWidget
+
 # Camera
 PRODUCT_PACKAGES += \
     libbson.vendor \
     Snap \
+    CameraGO \
     libstdc++.vendor \
     libwui
 
@@ -147,7 +154,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gps/etc/sap.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sap.conf \
     $(LOCAL_PATH)/gps/etc/xtwifi.conf:$(TARGET_COPY_OUT_VENDOR)/etc/xtwifi.conf
 
-# Healthd
+# Gallery
+PRODUCT_PACKAGES += \
+    GalleryGO
+
+# Health
 PRODUCT_PACKAGES += \
     android.hardware.health@2.0-impl \
     android.hardware.health@2.0-service
@@ -202,6 +213,10 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
     $(LOCAL_PATH)/configs/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
     $(LOCAL_PATH)/configs/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+
+# Music
+PRODUCT_PACKAGES += \
+    Sony
 
 # Net
 PRODUCT_PACKAGES += \
