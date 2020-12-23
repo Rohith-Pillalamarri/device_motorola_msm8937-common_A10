@@ -124,7 +124,7 @@ BOARD_KERNEL_SEPARATED_DT := true
 BOARD_KERNEL_IMAGE_NAME := Image.gz
 BOARD_MKBOOTIMG_ARGS := --ramdisk_offset $(BOARD_RAMDISK_OFFSET) --tags_offset $(BOARD_KERNEL_TAGS_OFFSET)
 
-TARGET_KERNEL_SOURCE := kernel/motorola/msm8953
+TARGET_KERNEL_SOURCE := kernel/motorola/msm8937
 
 # Media
 TARGET_USES_MEDIA_EXTENSIONS := true
@@ -144,6 +144,9 @@ LZMA_RAMDISK_TARGETS := recovery
 
 # Power
 TARGET_USES_INTERACTION_BOOST := true
+
+# Properties
+TARGET_SYSTEM_PROP := $(COMMON_PATH)/system.prop
 
 # Qualcomm support
 BOARD_USES_QCOM_HARDWARE := true
